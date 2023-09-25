@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FurEver Home</title>
+  <link rel="stylesheet" type="text/css" href="">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel = "stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to <span>Fur</span>ever Home</h1>
+  </header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Select A Location</a></li>
+        <li><a href="/cat">Find A Cat</a></li>
+        <li><a href="/dog">Find A Dog</a></li>
+        <li>
+          {{#if loggedIn}}
+            <button id="logout" class="btn-no-style">Logout</button>
+          {{else}}
+            <a href="/login">Login</a>
+          {{/if}}
+        </li>
+      </ul>
+    </nav>
+  
+
+  <main>
+    <section class="hero">
+      <h2>Find Your Perfect Companion!</h2>
+      <p>Select a location to explore our wide selection of adorable pets available for adoption.</p>
+    </section>
+
+    <div class="location">
+      {{{body}}}
+    </div>
+
+    <section class="featured-pets">
+      <h2>Featured Cuties!</h2>
+  <div class="slider-wrapper">
+        <div class="slider">
+          <img id="slide-1" src="https://i.pinimg.com/originals/7a/6d/62/7a6d62182b7ef057e7287e207b0a5901.jpg" alt="Fluffy">
+          <img id="slide-2" src="https://m.apnlive.com/sortd-service/imaginary/v22-01/jpg/large/high?url=YXBuLW5ld3MtcHJvZC1zb3J0ZC9tZWRpYTA2ZjMzYzEwLTE2ZTEtMTFlZC1hMWQ3LTliN2M3NzUwNGI2YWpwZw==" alt="Waffles">
+          <img id="slide-3" src="https://media.alwayspets.com/e6/14/e614c47d95c440d399c2c1bc26458b38.jpeg" alt="Olly">
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+        </div>
+    </section>
+  </main>
+ {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+ {{/if}}
+  <footer>
+    <p>&copy; 2023 FurEver Home Pet Adoption. All rights reserved.</p>
+  </footer>
+</body>
+</html>

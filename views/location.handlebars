@@ -1,0 +1,15 @@
+<section class="container">
+  <h3 class="location-name"></h3>{{location.name}}</h3>
+  <h4>Opening Hour: {{format_time location.opening_time}}</h4>
+  <h4>Closing Hour: {{format_time location.closing_time}}</h4>
+  <section class="flex-row justify-center">
+    {{#each location.cats as |cat|}}
+    {{> Kitty-details}}
+    {{/each}}
+  </section>
+  <section class="flex-row justify-center">
+    {{#each location.dogs as |dog|}}
+    {{> Doggy-details}}
+    {{/each}}
+  </section>
+</section>
