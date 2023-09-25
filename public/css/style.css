@@ -1,0 +1,45 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
+
+h1 span{
+    color: blue;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav {
+    background-color: antiquewhite;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 25rem;
+    margin-left: 10px;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 10/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
