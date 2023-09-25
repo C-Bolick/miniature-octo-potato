@@ -28,10 +28,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mahlheim/curly-broccoli.git"
+    "url": "https://github.com/C-Bolick/miniature-octo-potato"
   },
   "bugs": {
-    "url": "https://github.com/mahlheim/curly-broccoli/issues"
+    "url": "https://github.com/C-Bolick/miniature-octo-potato/issues"
   },
-  "homepage": "https://github.com/mahlheim/curly-broccoli#readme"
+  "homepage": "https://github.com/C-Bolick/miniature-octo-potato#readme"
 }
